@@ -1,0 +1,10 @@
+certifi==2019.11.28
+chardet==3.0.4
+idna==2.8
+pygame==1.9.6
+pygame-gui==0.4.2
+PyJWT==1.7.1
+requests==2.22.0
+urllib3==1.25.8
+virtualenv==16.5.0
+wget==3.2
