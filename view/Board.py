@@ -102,9 +102,6 @@ def draw_board(game_running):
     screen.blit(Grid.get_grid_surface(ownGrid), [ownGrid_pos_x, ownGrid_pos_y])
 
     if game_running:
-        ownGrid.grid_pos_x = int(size[0]/30)
-        screen.blit(text_player, (ownGrid_pos_x + 0.35 * grid_size, ownGrid_pos_y - 30))
-        screen.blit(Grid.get_grid_surface(ownGrid), [ownGrid_pos_x, ownGrid_pos_y])
         font_status = pg.font.Font(None, int(150 * SCALE))
         status_text = font_status.render(actual_game.status, True, Color(255, 0, 0))
         status_box = status_text.get_rect()
