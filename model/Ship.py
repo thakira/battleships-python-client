@@ -102,14 +102,14 @@ def free_space(ship_sprite):
 def create_ships(size, cell_size):
     ship_2_1 = Ship(0, 2, 50, int(size[1] / 3 + 10), cell_size)
     ship_2_2 = Ship(1, 2, 160, int(size[1] / 3 + 10), cell_size)
-    # ship_2_3 = Ship(2, 2, 50, int(size[1] / 3 + 10) + 60, cell_size)
-    # ship_2_4 = Ship(3, 2, 160, int(size[1] / 3 + 10) + 60, cell_size)
-    # ship_3_1 = Ship(4, 3, 50, int(size[1] / 3 + 10) + 120, cell_size)
-    # ship_3_2 = Ship(5, 3, 210, int(size[1] / 3 + 10) + 120, cell_size)
-    # ship_3_3 = Ship(6, 3, 50, int(size[1] / 3 + 10) + 180, cell_size)
-    # ship_4_1 = Ship(7, 4, 50, int(size[1] / 3 + 10) + 240, cell_size)
-    # ship_4_2 = Ship(8, 4, 50, int(size[1] / 3 + 10) + 300, cell_size)
-    # ship_5_1 = Ship(9, 5, 50, int(size[1] / 3 + 10) + 360, cell_size)
+    ship_2_3 = Ship(2, 2, 50, int(size[1] / 3 + 10) + 60, cell_size)
+    ship_2_4 = Ship(3, 2, 160, int(size[1] / 3 + 10) + 60, cell_size)
+    ship_3_1 = Ship(4, 3, 50, int(size[1] / 3 + 10) + 120, cell_size)
+    ship_3_2 = Ship(5, 3, 210, int(size[1] / 3 + 10) + 120, cell_size)
+    ship_3_3 = Ship(6, 3, 50, int(size[1] / 3 + 10) + 180, cell_size)
+    ship_4_1 = Ship(7, 4, 50, int(size[1] / 3 + 10) + 240, cell_size)
+    ship_4_2 = Ship(8, 4, 50, int(size[1] / 3 + 10) + 300, cell_size)
+    ship_5_1 = Ship(9, 5, 50, int(size[1] / 3 + 10) + 360, cell_size)
 
 
 # Liste mit noch nicht platzierten Schiffobjekten erhalten

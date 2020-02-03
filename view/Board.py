@@ -102,20 +102,10 @@ def draw_board(game_running):
     screen.blit(Grid.get_grid_surface(ownGrid), [ownGrid_pos_x, ownGrid_pos_y])
 
     if game_running:
-        ownGrid.ownGrid_pos_x = ownGrid_pos_x - 50
-        enemyGrid.enemyGrid_pos_x = enemyGrid_pos_x - 50
+        ownGrid.grid_pos_x = int(size[0]/30)
+        screen.blit(text_player, (ownGrid_pos_x + 0.35 * grid_size, ownGrid_pos_y - 30))
+        screen.blit(Grid.get_grid_surface(ownGrid), [ownGrid_pos_x, ownGrid_pos_y])
         font_status = pg.font.Font(None, int(150 * SCALE))
-        # if actual_game.game_id is None:
-        #     status = "Suche Gegner..."
-        # elif actual_game.next_player == int(player.user_id):
-        #     status = "Du bist dran!"
-        # elif actual_game.next_player == actual_game.enemy_id:
-        #     status = " " + actual_game.enemy_name + " ist dran!"
-        # elif actual_game.next_player == int(player.user_id) and actual_game.repeat:
-        #     status = "Du hast hier bereits hingeschossen. Versuche es noch einmal."
-        #     actual_game.repeat = False
-        # else:
-        #     status = ""
         status_text = font_status.render(actual_game.status, True, Color(255, 0, 0))
         status_box = status_text.get_rect()
         status_box.center = int((screen.get_width() - status_text.get_width()) // 2), 160
